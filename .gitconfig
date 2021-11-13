@@ -1,2 +1,4 @@
 [alias]
 	co = checkout
+[alias]
+  recent="branch --sort=-committerdate"
