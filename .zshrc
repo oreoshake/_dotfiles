@@ -38,3 +38,32 @@ alias gap="git add -p"
 alias gpo="git push origin HEAD"
 alias gp="git pull origin $(git_branch_name)"
 alias be="bundle exec"
+alias ll="ls -la"
+
+setopt CORRECT
+setopt CORRECT_ALL
+
+
+setopt EXTENDED_HISTORY
+SAVEHIST=5000
+HISTSIZE=2000
+
+# expire duplicates first
+setopt HIST_EXPIRE_DUPS_FIRST
+# do not store duplications
+setopt HIST_IGNORE_DUPS
+#ignore duplicates when searching
+setopt HIST_FIND_NO_DUPS
+# removes blank lines from history
+setopt HIST_REDUCE_BLANKS
+
+setopt AUTO_CD
+
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored _correct
+zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '' 'r:|[._-]=** r:|=**'
+zstyle :compinstall filename '/workspaces/dotfiles/foo'
+
+autoload -Uz compinit
+compinit
