@@ -18,7 +18,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:*' check-for-changes true formats "%r:%b (%a) %m%u%c"
+zstyle ':vcs_info:*' check-for-changes true formats "%r:%b %m%u%c"
 
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
