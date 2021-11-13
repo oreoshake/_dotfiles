@@ -1,0 +1,4 @@
+bundler
+brakeman
+rubocop-github
+rake
