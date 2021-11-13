@@ -9,7 +9,7 @@ function git_branch_name()
   then
     :
   else
-    echo '- ('$branch')'
+    echo $branch
   fi
 }
 
