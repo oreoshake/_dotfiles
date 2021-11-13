@@ -18,11 +18,11 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
-zstyle ':vcs_info:git*' actionformats "%s  %r/%S %b %m%u%c " check-for-changes true 
+zstyle ':vcs_info:git*' actionformats "%r/%S %b %m%u%c" check-for-changes true 
 
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-PROMPT='${PWD/#$HOME/~} %n ${vcs_info_msg_0_} > '
+PROMPT='${PWD/#$HOME/~} ${vcs_info_msg_0_} > '
 
 alias br="git_branch_name"
 alias gap="git add -p"
