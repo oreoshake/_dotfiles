@@ -29,8 +29,17 @@ zstyle ':vcs_info:*' check-for-changes true
 zstyle ':vcs_info:*' unstagedstr ' *'
 zstyle ':vcs_info:*' stagedstr ' +'
 # Set the format of the Git information for vcs_info
-zstyle ':vcs_info:git:*' formats       '(%b%u%c)'
+zstyle ':vcs_info:git:*' formats       '(%b%u%c%m)'
 zstyle ':vcs_info:git:*' actionformats '(%b|%a%u%c)'
+zstyle ':vcs_info:git*+set-message:*' hooks git-untracked
+
++vi-git-untracked() {
+  if [[ $(git rev-parse --is-inside-work-tree 2> /dev/null) == 'true' ]] && \
+     git status --porcelain | grep -m 1 '^??' &>/dev/null
+  then
+    hook_com[misc]='?'
+  fi
+}
 
 alias br="git_branch_name"
 alias gap="git add -p"
