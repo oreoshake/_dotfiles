@@ -67,3 +67,12 @@ zstyle :compinstall filename '/workspaces/dotfiles/foo'
 
 autoload -Uz compinit
 compinit
+
+plugins=(
+    git
+    zsh-autosuggestions
+    zsh-completions
+    zsh-syntax-highlighting
+    zsh-history-substring-search
+    zsh-docker
+)
