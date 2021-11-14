@@ -61,10 +61,6 @@ setopt AUTO_CD
 
 # The following lines were added by compinstall
 
-zstyle ':completion:*' completer _complete _ignored _correct
-zstyle ':completion:*' matcher-list 'm:{[:lower:]}={[:upper:]}' 'm:{[:lower:][:upper:]}={[:upper:][:lower:]}' '' 'r:|[._-]=** r:|=**'
-zstyle :compinstall filename '/workspaces/dotfiles/foo'
-
 autoload -Uz compinit
 compinit
 
