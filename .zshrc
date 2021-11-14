@@ -70,5 +70,6 @@ plugins=(
     zsh-completions
     zsh-syntax-highlighting
     zsh-history-substring-search
-    zsh-docker
 )
+
+source ~/.oh-my-zsh/oh-my-zsh.sh
