@@ -9,3 +9,4 @@ git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/
 
 cp .zshrc ~
 cp -R .rbenv ~
+cp -R .gemrc ~
