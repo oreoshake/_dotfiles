@@ -119,7 +119,5 @@ autoload -Uz add-zsh-hook
 add-zsh-hook preexec prompt_preexec
 add-zsh-hook precmd prompt_precmd
 
-RPROMPT='%(?..[%?] ) %F{cyan}${prompt_elapsed_time}%F{none}'
-
 # e.g. here we add the Git information in red
-PROMPT='%1~ %F{red}${vcs_info_msg_0_}%f %# '
+PROMPT='%(?..[%?] ) %F{cyan}${prompt_elapsed_time}%F{none} %1~ %F{red}${vcs_info_msg_0_}%f %# '
