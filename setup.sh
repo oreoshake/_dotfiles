@@ -7,6 +7,8 @@ git clone https://github.com/zsh-users/zsh-history-substring-search.git ${ZSH_CU
 git clone https://github.com/zsh-users/zsh-docker.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-docker
 git clone https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
 
+sudo apt-get install -y fonts-powerline
+
 cp .zshrc ~
 cp -R .rbenv ~
 cp -R .gemrc ~
