@@ -1,4 +1,5 @@
 [alias]
 	co = checkout
-[alias]
-  recent="branch --sort=-committerdate"
+  recent = "branch --sort=-committerdate"
+[commit]
+	gpgsign = true
