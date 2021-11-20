@@ -7,6 +7,10 @@ git clone --depth=1 https://github.com/zsh-users/zsh-history-substring-search.gi
 git clone --depth=1 https://github.com/zsh-users/zsh-docker.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-docker
 git clone --depth=1 https://github.com/rbenv/rbenv-default-gems.git $(rbenv root)/plugins/rbenv-default-gems
 
+# CI=1 for unattended install
+
+CI=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
 cp .zshrc ~
 cp -R .rbenv ~
 cp -R .gemrc ~
