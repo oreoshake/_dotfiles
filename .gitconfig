@@ -3,3 +3,6 @@
   recent = "branch --sort=-committerdate"
 [commit]
 	gpgsign = true
+[user]
+	name = Neil Matatall
+	email = 448516+oreoshake@users.noreply.github.com
