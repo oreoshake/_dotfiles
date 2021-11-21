@@ -121,3 +121,5 @@ add-zsh-hook precmd prompt_precmd
 
 # e.g. here we add the Git information in red
 PROMPT='%(?..[%?] ) %F{cyan}${prompt_elapsed_time}%F{none} %1~ %F{red}${vcs_info_msg_0_}%f %# '
+
+eval $(/opt/homebrew/bin/brew shellenv)
