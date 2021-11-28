@@ -47,6 +47,7 @@ alias gpo="git push origin HEAD"
 alias gp="git pull origin $(git_branch_name)"
 alias be="bundle exec"
 alias ll="ls -la"
+alias gv="gh repo view -w"
 
 setopt CORRECT
 setopt CORRECT_ALL
