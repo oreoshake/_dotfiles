@@ -123,9 +123,6 @@ add-zsh-hook precmd prompt_precmd
 # e.g. here we add the Git information in red
 PROMPT='%(?..[%?] ) %F{cyan}${prompt_elapsed_time}%F{none} %1~ %F{red}${vcs_info_msg_0_}%f %# '
 
-
-I also share my Zsh startup between multiple operating systems. You could use a case statement for those commands which are system-specific:
-
 case `uname` in
   Darwin)
     eval $(/opt/homebrew/bin/brew shellenv)
