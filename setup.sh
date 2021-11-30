@@ -13,8 +13,7 @@ case `uname` in
     brew install rbenv
   ;;
   Linux)
-    apt install rbenv
-    rbenv install
+    # codespaces has rbenv installed
   ;;
 esac
 
